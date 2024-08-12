@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* background-color: #d9b5dd; */
+  }
+
+  b{
+    background: linear-gradient(to right, rgb(206, 165, 205), #5e35b1);
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+  }
+
+  .welcome-text {
+    color: rgb(252, 251, 251);
+    font-size: 50px;
+  }
+  
+  .starups-text {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .starups-text-content {
+    color: #5e35b1 !important;
+    background: linear-gradient(to right, rgb(206, 165, 205), #5e35b1);
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-size:75px;
+    font-weight: bold; 
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #5e35b1;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .nav-links a:hover {
+    color: #91329e;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #91329e;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .signup-button {
+    text-decoration: none;
+    background-color: black;
+    color: #5e35b1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .signup-button:hover {
+    background-color: black;
+    border: 3px solid #5e35b1;
+    color: #5e35b1;
+  }
+  
+  #home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 70vh;
+    background: #ffffff;
+  }
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+.container .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.row section.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row section.left {
+    flex-basis: 35%;
+    min-width: 320px;
+    margin-right: 60px;
+}
+
+.row section.right {
+    flex-basis: 60%;
+}
+
+section.left .contactTitle h2 {
+    font-size: 30px;
+    /* background: linear-gradient(to right, rgb(228, 199, 140), #3ec3d4); */
+    background: linear-gradient(to right, rgb(206, 165, 205), #5e35b1) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 25px; 
+    text-decoration-color: #5e35b1;
+    position: relative;
+    /*
+    font-size: 28px;
+    background: linear-gradient(to right, rgb(206, 165, 205), #5e35b1);
+    background-clip: text;
+    color: transparent; 
+    
+    */
+}
+
+section.left .contactTitle h2::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    top: 120%;
+    left: 0;
+}
+
+section.left .contactTitle h2::after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    background-color:#5e35b1;
+    top: calc(120% - 1px);
+    left: 0;
+}
+
+section.left .contactTitle p {
+    font-size: 17px;
+    color:white;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding-bottom: 22px;
+}
+
+section.left .contactInfo {
+    margin-bottom: 16px;
+}
+
+.contactInfo .iconGroup {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.iconGroup .icon {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #5e35b1;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconGroup .icon i {
+    font-size: 20px;
+    color: white;
+}
+
+.iconGroup .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconGroup .details span {
+    color: white;
+    font-size: 18px;
+}
+
+.iconGroup .details span:nth-child(1) {
+    text-transform: uppercase;
+    color: white;
+}
+
+section.left .socialMedia {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 22px 0;
+}
+
+.socialMedia a {
+    width: 40px; /* Adjusted for better size */
+    height: 40px; /* Adjusted for better size */
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px; /* Centering icon vertically */
+    margin-right: 15px !important;
+    border-radius: 50%; /* Ensures the background is round */
+    background-color: #5e35b1 !important;
+    color: white !important;
+    transition: 0.4s !important;
+}
+
+.socialMedia a i {
+    background-color: #5e35b1 !important;
+    color: white !important; /* Change icon color to white by default */
+    font-size: 20px !important; /* Adjusted for better visual balance */
+}
+
+.socialMedia a:hover {
+    transform: translateY(-5px);
+    background-color: white !important;
+    color: #5e35b1 !important;
+    border: 1px solid #5e35b1;
+}
+
+.socialMedia a:hover i {
+    background-color: white !important;
+    color: #5e35b1 !important; /* Change icon color to #893494 on hover */
+}
+
+
+.row section.right .messageForm {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.row section.right .inputGroup {
+    margin: 18px 0;
+    position: relative;
+}
+
+.messageForm .halfWidth {
+    flex-basis: 48%;
+    display: inline-block;
+}
+
+.messageForm .fullWidth {
+    flex-basis: 5%;
+}
+
+.messageForm input,
+.messageForm textarea {
+    width: 80%;
+    font-size: 18px;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #5e35b1;
+    outline: none;
+}
+
+.messageForm textarea {
+    resize: none;
+    height: 130px; /* Adjusted height for a smaller textarea */
+    display: block;
+}
+
+
+
+
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #5e35b1;
+    border-radius: 15px;
+}
+
+.inputGroup label {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    color: white;
+    font-size: 18px;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+.inputGroup:nth-child(4) label {
+    top: 2px;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup input:valid ~ label,
+.inputGroup textarea:valid ~ label {
+    transform: translateY(-30px);
+    font-size: 16px;
+}
+
+.inputGroup button {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #5e35b1 !important;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+
+.inputGroup button:hover {
+    background-color: rgb(0, 0, 0) !important;
+    font-size: 18px;
+    color: #5e35b1 !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #5e35b1;
+}
+
+@media (max-width: 1100px) {
+    .messageForm .halfWidth {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .container .row {
+        flex-wrap: wrap;
+    }
+    .row section.left,
+    .row section.right {
+        flex-basis: 100%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Starups Logo" class="logo">
+            <span class="brand-name">StarUPS</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="#signup" class="signup-button">Sign Up</a>
+    </nav>
+
+    <section class="hidden section-image-right">
+        <div class="text-content">
+            <h2>Who are we?</h2>
+            <h1>
+                <span class="welcome-text">We are</span>
+                <span class="starups-text">
+                    <span class="starups-text-content">Change!</span> 
+                    <!-- <span class="emoji">✨</span> -->
+                </span>
+            </h1>
+            <p style="text-align: left; margin-left: 70px;">
+                <b>STARUPS</b> is a cutting-edge platform revolutionizing learning by focusing on 
+                industry-ready <b>S</b>kills, entrepreneurial success, and career advancement. <br>
+                We <b>T</b>each using visualization-based methods, <br>
+                <b>A</b>mbitions are the paths we pave for you. <br>
+                Through <b>R</b>esearch on real-world applications, <br>
+                we are on a mission to modernize and enhance the effectiveness of learning,
+                <b>U</b>niquely em<b>P</b>owering <b>S</b>tudents to succeed.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="bgstt.jpg" alt="Change Image" width="550" height="550">
+        </div>
+    </section>
+    <section class="hidden right">
+        <h2>What do we do</h2>
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="visualization.jpg" alt="Change Image" width="550" height="550">
+            </div>
+            <div class="text-container">
+                <h3>Visualization-Based Learning & Comprehensive Resources</h3>
+                <div class="text">
+                    <p>Enhance your learning experience with STARUPS through our unique visualization-based approach. We offer live and recorded classes that bring programming and computer science concepts to life. With the flexibility to choose between real-time interaction or recorded sessions, you’ll dive into complex topics with ease. Additionally, we provide relevant textbooks, documentation, handwritten notes, and recommended sites to support deeper understanding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hidden">
+        <div class="content-wrapper reverse">
+            <div class="image-container">
+                <img src="roadmaps.png" alt="Change Image" width="550" height="550">
+            </div>
+            <div class="text-container">
+                <h3>Structured Roadmaps & In-Demand Tools</h3>
+                <div class="text">
+                    <p>Chart your path to success with our meticulously designed roadmaps, guiding you from foundational knowledge to advanced expertise. We ensure you gain domain-specific skills that make you job-ready. Stay ahead by mastering the latest, most in-demand tools and technologies. Our courses are regularly updated to include the newest advancements, so you're always learning the most relevant and cutting-edge skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hidden right">
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="rsch.jpeg" alt="Change Image" width="550" height="550">
+            </div>
+            <div class="text-container">
+                <h3>Research Support & Internship Programs</h3>
+                <div class="text">
+                    <p>Step into the world of research with our comprehensive support. We encourage tackling real-world problems and writing research papers, helping you contribute significantly to your field. Gain invaluable real-world experience through our range of paid, unpaid, and certified internships within our network and with partner companies. These opportunities allow you to apply your skills in professional settings, boosting your resume and career prospects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hidden">
+        <div class="content-wrapper reverse">
+            <div class="image-container">
+                <img src="prc.jpeg" alt="Change Image" width="550" height="550">
+            </div>
+            <div class="text-container">
+                <h3>Continuous Learning & Project Management</h3>
+                <div class="text">
+                    <p>Stay informed with the latest global news in science and computer research, exploring emerging technologies and evolving scientific discoveries. Never miss an important career milestone with our timely notifications, keeping you updated on critical events. Manage your projects with ease using our dedicated project management tools, supporting various roles and requirements for seamless collaboration and project completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hidden right">
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="cmm.jpg" alt="What do we do" width="400">
+            </div>
+            <div class="text-container">
+                <h3>Community Support & Startup Motivation</h3>
+                <div class="text">
+                    <p>Join the largest community of experts and peers, where support is always at hand. Our network of professionals is ready to assist you with technical questions and career advice. We also believe in fostering innovation and entrepreneurship, offering financial and motivational support to help you launch your startups. Stay updated with the latest market requirements and turn your ideas into successful ventures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="hidden">
+        <h2>Why choose us</h2>
+        <p>Choose STARUPS for our innovative approach that combines cutting-edge tools and real-world experience with a supportive community. Benefit from our unique educational resources and mentorship to stay ahead in your field.</p>
+        <div class="image-container">
+            <!-- <img src="career.jpg" alt="Why choose us"> -->
+        </div>
+        <div class="future-text">
+            <p>Build your future with us</p>
+            <p id="extra">Experience a transformative journey in computer science with STARUPS. <br> Join us today and take the first step towards a brighter, more successful future.</p>
+        </div>
+    </section>
+    <footer>
+        <a href="contact.html" class="contact-button">Contact Us</a>
+        <br>
+        <br>
+        <br>
+        <p>&copy; 2024 StarUPS. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+// Observe elements with the class 'hidden'
+document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
+
+    </script>
+</body>
+</html>

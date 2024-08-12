@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css"> <!-- Make sure to link your CSS file -->
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css" integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Starups Logo" class="logo">
+            <span class="brand-name">StarUPS</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="#signup" class="signup-button">Sign Up</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <section class="col left">
+                <div class="contactTitle">
+                    <h2>Contact Us</h2>
+                    <p>We'd love to hear from you. Please reach out with any questions or feedback.</p>
+                </div>
+                <div class="contactInfo">
+                    <div class="iconGroup">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i> <!-- Font Awesome map icon -->
+                        </div>
+                        <div class="details">
+                            <span>Address</span>
+                            <span>Hyderabad</span>
+                        </div>
+                    </div>
+                    <div class="iconGroup">
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i> <!-- Font Awesome phone icon -->
+                        </div>
+                        <div class="details">
+                            <span>Phone</span>
+                            <span>+91 8309985635</span>
+                        </div>
+                    </div>
+                    <div class="iconGroup">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i> <!-- Font Awesome envelope icon -->
+                        </div>
+                        <div class="details">
+                            <span>Email</span>
+                            <span>starups.in@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialMedia">
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/starups.in?igsh=MWZ2Mnl5YXM2OXFsNg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=starups.in@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://www.linkedin.com/company/starups/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </section>
+            <section class="col right">
+                <form action="https://formspree.io/f/xrbzkrbv" method="POST" class="messageForm">
+                    <div class="inputGroup halfWidth">
+                        <input type="text" id="firstName" name="firstName" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="inputGroup halfWidth">
+                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div class="inputGroup halfWidth">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="inputGroup halfWidth">
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="inputGroup fullWidth">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message" placeholder="">Your Message</label>
+                    </div>
+                    <div class="inputGroup fullWidth">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </section>
+            
+        </div>
+    </div>
+    <!-- Font Awesome (for icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
