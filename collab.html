@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Docs Clone</title>
+    <link rel="stylesheet" href="collab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Starups Logo" class="logo" id="top">
+            <span class="brand-name">StarUPS</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="ourProducts.html">Our Products</a></li>
+            <li><a href="index.html">Edu Tech</a></li>
+            <li><a href="collab.html">R&Doc</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <!-- <a href="#signup" class="signup-button">Sign Up</a> -->
+    </nav>
+    <div class="container">
+        <header class="header">
+            <div class="top-bar">
+                <button class="menu-btn">☰</button>
+                <div class="doc-title-container">
+                    <h1 class="doc-title" id="docTitleDisplay">Research Paper - 1</h1>
+                    <input type="text" class="doc-title-input" id="docTitleInput" placeholder="Untitled Document">
+                </div>
+                <div class="top-right">
+                    <!-- New buttons added here -->
+                    <button class="version-history-btn" title="Version History">
+                        <i class="fas fa-history"></i>
+                    </button>
+                    <button class="add-comment-btn" title="Add Comment">
+                        <i class="fas fa-comment-alt"></i>
+                    </button>
+                    <button class="join-call-btn" title="Join Call">
+                        <i class="fas fa-video"></i>
+                    </button>
+                    <button class="share-btn">Share</button>
+                    <button class="account-btn">Account</button>
+                </div>
+            </div>
+            <div class="toolbar">
+                <button class="toolbar-btn">File</button>
+                <button class="toolbar-btn">Edit</button>
+                <button class="toolbar-btn">View</button>
+                <button class="toolbar-btn">Insert</button>
+                <button class="toolbar-btn">Format</button>
+                <button class="toolbar-btn">Tools</button>
+                <button class="toolbar-btn">Help</button>
+                <button class="toolbar-btn save-btn">Save</button>
+            </div>
+            <div class="formatting-toolbar">
+                <button class="toolbar-btn undo-btn" title="Undo">↶</button>
+                <button class="toolbar-btn redo-btn" title="Redo">↷</button>
+                <button class="toolbar-btn print-btn" title="Print">🖨</button>
+                <button class="toolbar-btn paint-format-btn" title="Paint Format">🖌</button>
+            
+                <select class="toolbar-dropdown" id="zoomDropdown" title="Zoom">
+                    <option value="50">50%</option>
+                    <option value="75">75%</option>
+                    <option value="90">90%</option>
+                    <option value="100" selected>100%</option>
+                    <option value="125">125%</option>
+                    <option value="150">150%</option>
+                    <option value="200">200%</option>
+                </select>
+            
+                <span class="toolbar-divider">|</span>
+            
+                <select class="toolbar-dropdown" id="textStyleDropdown" title="Normal text">
+                    <option value="p">Normal text</option>
+                    <option value="h1">Heading 1</option>
+                    <option value="h2">Heading 2</option>
+                    <option value="h3">Title</option>
+                    <option value="h4">Subtitle</option>
+                </select>
+            
+                <select class="toolbar-dropdown" id="fontDropdown" title="Text Font">
+                    <option value="Arial" selected>Arial</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select>
+            
+                <select class="toolbar-dropdown" id="fontSizeDropdown" title="Text Size">
+                    <option value="1">8pt</option>
+                    <option value="2">10pt</option>
+                    <option value="3" selected>12pt</option>
+                    <option value="4">14pt</option>
+                    <option value="5">18pt</option>
+                    <option value="6">24pt</option>
+                    <option value="7">36pt</option>
+                </select>
+            
+                <span class="toolbar-divider">|</span>
+            
+                <button class="toolbar-btn bold-btn" title="Bold">𝐁</button>
+                <button class="toolbar-btn italic-btn" title="Italic">𝐼</button>
+                <button class="toolbar-btn underline-btn" title="Underline">U̲</button>
+                <button class="toolbar-btn text-color-btn" title="Text Color">🎨</button>
+            
+                <span class="toolbar-divider">|</span>
+            
+                <button class="toolbar-btn insert-link-btn" title="Insert Link">🔗</button>
+                <button class="toolbar-btn insert-image-btn" title="Insert Image">🖼</button>
+                <button class="toolbar-btn add-comment-btn" title="Add Comment">💬</button>
+            
+                <span class="toolbar-divider">|</span>
+            
+                <button class="toolbar-btn align-btn" title="Align">☰</button>
+                <button class="toolbar-btn spacing-btn" title="Paragraph Spacing">↕️</button>
+                <button class="toolbar-btn list-btn" title="Bulleted List">• ●</button>
+            </div>
+        </header>
+        <main class="document">
+            <div class="content" contenteditable="true">
+                <p>Start typing your document here...</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

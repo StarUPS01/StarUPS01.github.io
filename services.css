@@ -1,0 +1,246 @@
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+  }
+  img {
+    position: relative;
+    z-index: 10; /* Higher z-index so images are above the particles */
+  }
+nav,section, footer {
+  position: relative;
+  z-index: 3; /* Higher z-index for content */
+} 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.brand-name {
+  color: white !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5e35b1;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #91329e;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #91329e;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+.signup-button {
+  text-decoration: none;
+  background-color: #5e35b1;
+  color: #5e35b1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signup-button:hover {
+  background-color: black;
+  border: 3px solid #5e35b1;
+  color: #5e35b1;
+}  
+
+/* Body-Main Styles*/
+#op{
+  margin-top: 48px;
+  margin-left: 125px;
+  font-weight: 800;
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(206, 165, 205), #5e35b1);
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+
+section{
+  margin-bottom: 60px;
+}
+
+.list {
+  display: grid;
+  color: white;
+  grid-template-rows: 5rem 5rem;
+  /* padding: 10px; */
+  margin-top: 38px;
+  margin-left: 125px;
+  width: 80vw;
+}
+.list1, .list2{
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 1fr;
+}
+.list2{
+  grid-template-columns: .5fr 1fr .5fr;
+}
+.listItem{
+  display: flex;
+  border: 2px solid black;
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(206, 165, 205), #5e35b1);;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center
+}
+.prnames{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.products{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  padding: 20px;
+  margin-left: 105px;
+  margin-top: 30px;
+  color: white;
+  width: 80vw;
+}
+.products h2 {
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(206, 165, 205), #5e35b1);
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+.aiProducts{
+  display: flex;
+  flex-direction: row;
+
+}
+.text-box{
+  display: flex;
+  width: 60vw;
+  height: auto;
+  padding: 20px;
+  text-align: left;
+  flex-direction: column;
+}
+.image-container{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Body-Footer Styles*/
+.top{
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 20px;
+ margin-bottom: 10px;
+ text-align: center;
+ 
+
+}
+#backToTop {
+  z-index: 99; 
+  background-color: #76248a;
+  color: white; 
+  padding: 10px; 
+  font-size: 18px;
+  border-radius: 50%; 
+  text-decoration: none;
+  width: 20px;
+  height: 20px; 
+}
+
+#backToTop:hover {
+  background-color: white;
+  color: #893494;
+  
+}
+
+footer {
+    background-color: #e6d3e8; /* Plum color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Changed to relative to ensure the footer expands with content */
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+.contact-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #76248a; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color: #893494;
+    border: 2px solid #893494;
+}
